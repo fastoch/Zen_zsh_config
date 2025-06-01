@@ -91,7 +91,7 @@ But in this zsh config, we will use **Powerlevel10k**.
 
 Before we can install it however, we need to get a nerd font set up on our system.  
 We will use the **JetBrainsMono** Nerd Font. To install it on Fedora, we need to:
-- enable the COPR repo: `sudo dnf copr enable maveonair/jetbrains-mono-nerd-fonts`
+- enable the COPR repo: `sudo dnf copr enable che/nerd-fonts`
 - install the fonts: `sudo dnf install jetbrains-mono-nerd-fonts jetbrains-mononl-nerd-fonts`
 
 
