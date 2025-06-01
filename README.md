@@ -1,2 +1,6 @@
-# Zsh_config
-Ghostty terminal + Z shell
+src = https://www.youtube.com/watch?v=ud7YxC33Z3w
+
+# Getting started
+
+
+
