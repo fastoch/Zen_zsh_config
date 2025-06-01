@@ -89,16 +89,37 @@ The first plugin we're going to add is our zenful prompt.
 When it comes to zsh, there are a number of different prompt options available, one of the most popular one being **starship.rs**.  
 But in this zsh config, we will use **Powerlevel10k**.  
 
+## Set up the default font 
+
 Before we can install it however, we need to get a nerd font set up on our system.  
 We will use the **JetBrainsMono** Nerd Font.  
 
-## If you're using Ghostty as your terminal application
+If you're using **Ghostty** as your terminal application, you don't need to do anything since JetBrains Mono is the embedded default font.  
 
-To set JetBrains Mono as the default font in **Ghostty**, you generally do not need to do anything since JetBrains Mono is the embedded default font.  
+## Install Powerlevel10k
+
+Edit your ~/.zshrc file and add the following:
+```bash
+# Add in Powerlevel10k
+zinit ice depth=1; zinit light romkatv/powerlevel10k
+```
+
+About the above command:
+- The `ice` command allows us to pass arguments to the next zinit command
+- `zinit ice depth=1;` passes `depth=1` to the `zinit light` command
+- `zinit` makes use of `git` under the hood, which is where the `depth=1` argument comes from
+- zinit has 2 commands for installing packages: `zinit load` & `zinit light`
+  - both commands pretty much do the same thing, except `zinit load` has reporting and investigation built-in
+
+## Configure Powerlevel10k
+
+Open up a new terminal window and you'll be greeted with the powerlevel10k configuration wizard.  
+- The first questions are easy to answer and depend on whether you've properly set up your nerd font
+- Then choose your favorite prompt style between lean, classic, rainbow, and pure
+- Select your favorite prompt color between original and snazzy
+- decide if you want to show current time
+- select the prompt height, the prompt spacing, and the instant prompt mode
+- apply changes to `~/.zshrc`
 
 
-
-
-
-
-@4/17
+@7/17
