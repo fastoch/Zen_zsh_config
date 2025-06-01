@@ -21,6 +21,7 @@ We're going to use **zinit**, which provides pretty much all the bells & whistle
 ## zinit location
 
 In order to add zinit, we first need to define where it's going to live.  
+For that, let's edit the `~/.zshrc` file:
 ```bash
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
@@ -37,6 +38,8 @@ Here’s a breakdown of what it does:
 
 ## zinit installation
 
+Let's keep editing our `~/.zshrc` file.  
+
 If there is no directory at the ZINIT_HOME env var, then create this directory and clone down zinit into it:
 ```bash
 # Download zinit if it's not there yet
@@ -46,13 +49,14 @@ if [ ! -d "$ZINIT_HOME" ]; then
 fi
 ```
 
-All of the above makes sure that zinit is installed the first time the zshrc file is sourced.  
+The above config makes sure that zinit is installed the first time the zshrc file is sourced.  
 
 Now, we can add this line to our `.zshrc` file:
 ```bash
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 ```
+This will source our zsh config file next time we open a terminal.  
 
 Here's how our final `.zshrc` file looks like:
 ```bash
@@ -69,13 +73,27 @@ fi
 source "${ZINIT_HOME}/zinit.zsh"
 ```
 
-## Make sure everything works as expected
+## Make sure that everything works as expected
 
 After saving and exiting our .zshrc file, run `zinit zstatus`  
+If everything is set up correctly, you should see something like this:
+![image](https://github.com/user-attachments/assets/9500fd30-05bb-4300-abf6-e39d95dcfdf7)
 
 ---
 
 # Zenful Prompt
+
+Now that our plugin manager for zsh has been set up and is ready-to-go, we can add some plugins.  
+The first plugin we're going to add is our zenful prompt.  
+
+When it comes to zsh, there are a number of different prompt options available, one of the most popular one being **starship.rs**.  
+But in this zsh config, we will use **Powerlevel10k**.  
+
+Before we can install it however, we need to get a nerd font set up on our system.  
+We will use the **JetBrainsMono** Nerd Font. To install it on Fedora, we need to:
+- enable the COPR repo: `sudo dnf copr enable maveonair/jetbrains-mono-nerd-fonts`
+- install the fonts: `sudo dnf install jetbrains-mono-nerd-fonts jetbrains-mononl-nerd-fonts`
+
 
 
 @3/17
