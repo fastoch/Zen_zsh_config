@@ -118,8 +118,21 @@ Open up a new terminal window and you'll be greeted with the powerlevel10k confi
 - Then choose your favorite prompt style between lean, classic, rainbow, and pure
 - Select your favorite prompt color between original and snazzy
 - decide if you want to show current time
-- select the prompt height, the prompt spacing, and the instant prompt mode
+- select the prompt height and prompt spacing
+- Enable the transient prompt if you want to remove the header from previous commands (helps focusing on current cmd)
+- select the instant prompt mode (verbose is the recommended mode)
 - apply changes to `~/.zshrc`
 
+Our awesome zenful prompt is now ready to use!   
 
-@7/17
+Note that a couple of lines were added at the start of our .zshrc file. These are to enable the **transient prompt**.  
+Make sure to keep these lines at the top of the file so that the transient prompt is loaded first.  
+
+We also have an additional line at the bottom of our config file.  
+This line checks for the existence of a `.p10k.zsh` file, and then sources it if it exists.  
+This file contains our powerlevel10k configuration, which we can actually edit if we want to customize our prompt a bit further.  
+
+Finally, we can also call the `p10k configure` command in order to restart the configuration wizard.
+
+
+@8/17
