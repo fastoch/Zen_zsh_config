@@ -130,9 +130,23 @@ Make sure to keep these lines at the top of the file so that the transient promp
 
 We also have an additional line at the bottom of our config file.  
 This line checks for the existence of a `.p10k.zsh` file, and then sources it if it exists.  
-This file contains our powerlevel10k configuration, which we can actually edit if we want to customize our prompt a bit further.  
+This file contains our powerlevel10k configuration, which we can actually edit to customize our prompt a bit further.  
 
-Finally, we can also call the `p10k configure` command in order to restart the configuration wizard.
+Finally, we can also call the `p10k configure` command in order to restart the configuration wizard.  
+
+# Big 3 Plugins
+
+These three plugins are used to provide the foundation for our setup:
+- zsh-syntax-highlighting
+- zsh-completions
+- zsh-autosuggestions
+
+We can add the first one using the `~/.zshrc` file:
+```bash
+# Add in zsh plugins (the big three)
+zinit light zsh-users/zsh-syntax-highlighting
+```
+
 
 
 @8/17
