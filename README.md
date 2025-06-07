@@ -111,7 +111,7 @@ About the above command:
 - zinit has 2 commands for installing packages: `zinit load` & `zinit light`
   - both commands pretty much do the same thing, except `zinit load` has reporting and investigation built-in
 
-## Configure Powerlevel10k
+## Configuring Powerlevel10k
 
 Open up a new terminal window and you'll be greeted with the powerlevel10k configuration wizard.  
 - The first questions are easy to answer and depend on whether you've properly set up your nerd font
@@ -141,12 +141,18 @@ These three plugins are used to provide the foundation for our setup:
 - zsh-completions
 - zsh-autosuggestions
 
-We can add the first one using the `~/.zshrc` file:
+## Syntax Highlighting
+
+We can add the first one adding this line to our `~/.zshrc` file:
 ```bash
 # Add in zsh plugins (the big three)
 zinit light zsh-users/zsh-syntax-highlighting
 ```
+This plugin, as the name suggests, enables nice syntax highlighting for our commands.  
 
+## Z shell completions
+
+The next plugin to add is zsh-completions, 
 
 
 @8/17
