@@ -164,6 +164,18 @@ However, we also need to tell zsh to automatically load our completions whenever
 # Load completions
 autoload -U compinit && compinit
 ```
-Now, when I open up a new terminal window, 
+Now, when I open up a new terminal window and start typing out a command, I can press the Tab key to see any completions associated with it.  
 
-@8/17
+You can see which tools this plug-in provides completions for on the GitHub repo: https://github.com/zsh-users/zsh-completions  
+
+## Z shell autosuggestions
+
+The last of the Big Three:
+```bash
+# Add in zsh plugins (the big three)
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+```
+
+@9/17
