@@ -152,7 +152,18 @@ This plugin, as the name suggests, enables nice syntax highlighting for our comm
 
 ## Z shell completions
 
-The next plugin to add is zsh-completions, 
+The next plugin to add is zsh-completions, which provides autocomplete functionality for a number of CLI tools.  
+```bash
+# Add in zsh plugins (the big three)
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+```
 
+However, we also need to tell zsh to automatically load our completions whenever it starts:
+```bash
+# Load completions
+autoload -U compinit && compinit
+```
+Now, when I open up a new terminal window, 
 
 @8/17
