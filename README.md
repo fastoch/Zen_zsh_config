@@ -177,5 +177,31 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 ```
+This plug-in provides autosuggestions based on your command history, similar to what the **fish** shell provides.  
+If the suggested command matches the one you want to run, just press the **right arrow** to confirm it and press Enter.  
 
-@9/17
+# Old habits die hard
+
+Of course, the usual keybindings still work:
+- ctrl + E to jump to the end of a command 
+- ctrl + A to jump to the start
+- ctrl + U to delete a command (undo)
+- ctrl + Y to write the previous command back (redo)
+- ctrl + F to move forwards through the command
+- ctrl + B to move backwards
+- ctrl + L to move the prompt at the top
+- up and down arrows to move through your command history
+
+# Command history persistence
+
+We currently have a bit of an issue.  
+If we open up a new terminal window, none of the commands from my other shell session are being suggested.  
+
+In order for our command history to persist between sessions, we need to set up and enable a few options inside of our `.zshrc` file.  
+
+
+
+
+
+
+@10/17
