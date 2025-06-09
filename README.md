@@ -208,8 +208,14 @@ setopt appendhistory
 setopt sharehistory
 setopt hist_ignore_space
 ```
-- The first line sets the max limit for the number of commands stored in our history
-- 
+- The first variable sets the number of commands saved in our history
+- The second variable sets our history file
+- The third variable needs to be the same size as the first one
+- The fourth variable is set to erase any duplicate command from our history
+- The `appendhistory` option causes zsh to append any commands to the history file rather than overwriting it
+- The next option will share our command history across all zsh sessions
+- The `hist_ignore_space` allows us to prevent a command from being written to the history file by adding a space before it
+  - This is useful to prevent any sensitive information from being saved in our history file
 
 
 @11/17
