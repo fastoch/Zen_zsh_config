@@ -198,10 +198,18 @@ We currently have a bit of an issue.
 If we open up a new terminal window, none of the commands from my other shell session are being suggested.  
 
 In order for our command history to persist between sessions, we need to set up and enable a few options inside of our `.zshrc` file.  
+```bash
+# History settings
+HISTSIZE=4000
+HISTFILE=~/.zsh_history
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+```
+- The first line sets the max limit for the number of commands stored in our history
+- 
 
 
-
-
-
-
-@10/17
+@11/17
