@@ -216,6 +216,11 @@ setopt hist_ignore_space
 - The next option will share our command history across all zsh sessions
 - The `hist_ignore_space` allows us to prevent a command from being written to the history file by adding a space before it
   - This is useful to prevent any sensitive information from being saved in our history file
+ 
+# Fzf and advanced completion styling
+
+Fzf = command-line fuzzy finder  
 
 
-@11/17
+
+@13/17
