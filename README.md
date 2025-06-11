@@ -217,7 +217,7 @@ setopt hist_ignore_space
 - The `hist_ignore_space` allows us to prevent a command from being written to the history file by adding a space before it
   - This is useful to prevent any sensitive information from being saved in our history file
  
-# Fzf and advanced completion styling
+# Fzf for Reverse Searching
 
 Fzf = command-line fuzzy finder  
 to install Fzf on Fedora: `sudo dnf install fzf`  
@@ -227,10 +227,9 @@ Once installed, we can set up the fzf shell integration by adding the following 
 # Fzf shell integration
 eval "$(fzf --zsh)"
 ```
-Write and quit, then exit the terminal and start it back.  
-
-To invoke fzf when searching for a cmd, simply press `Ctrl + R`.  
-
+After editing the `.zshrc` file, exit the terminal and start it back.  
+When you need to find a previous cmd, you can now invoke fzf by simply pressing `Ctrl + R`.  
 
 
-@14/17
+---
+EOF
