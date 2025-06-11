@@ -220,7 +220,17 @@ setopt hist_ignore_space
 # Fzf and advanced completion styling
 
 Fzf = command-line fuzzy finder  
+to install Fzf on Fedora: `sudo dnf install fzf`  
+
+Once installed, we can set up the fzf shell integration by adding the following line to our `.zshrc` file:
+```bash
+# Fzf shell integration
+eval "$(fzf --zsh)"
+```
+Write and quit, then exit the terminal and start it back.  
+
+To invoke fzf when searching for a cmd, simply press `Ctrl + R`.  
 
 
 
-@13/17
+@14/17
